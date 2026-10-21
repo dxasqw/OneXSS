@@ -108,7 +108,7 @@ export default function InstallForm({ kv_status, db_status, passwordsalt_status,
           name="domain"
           fieldProps={{
             size: 'large',
-            prefix: <ApiOutlined className={'prefixIcon'} rev={undefined} />,
+            prefix: <ApiOutlined className={'prefixIcon'} />,
           }}
           placeholder={'JS接口域名'}
           rules={[
@@ -133,7 +133,7 @@ export default function InstallForm({ kv_status, db_status, passwordsalt_status,
           name="username"
           fieldProps={{
             size: 'large',
-            prefix: <UserOutlined className={'prefixIcon'} rev={undefined} />,
+            prefix: <UserOutlined className={'prefixIcon'} />,
           }}
           placeholder={'用户名'}
           rules={[
@@ -155,7 +155,7 @@ export default function InstallForm({ kv_status, db_status, passwordsalt_status,
           name="password"
           fieldProps={{
             size: 'large',
-            prefix: <LockOutlined className={'prefixIcon'} rev={undefined} />,
+            prefix: <LockOutlined className={'prefixIcon'} />,
           }}
           placeholder={'密码'}
           rules={[
@@ -173,7 +173,7 @@ export default function InstallForm({ kv_status, db_status, passwordsalt_status,
           name="useremail"
           fieldProps={{
             size: 'large',
-            prefix: <MailOutlined className={'prefixIcon'} rev={undefined} />,
+            prefix: <MailOutlined className={'prefixIcon'} />,
           }}
           placeholder={'邮箱'}
           rules={[

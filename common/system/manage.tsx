@@ -151,7 +151,7 @@ export default function ManagePage({ sessionData }: { sessionData: SessionDataIt
                             key="addUserForm"
                             trigger={
                                 <Button type="primary">
-                                    <PlusOutlined rev={undefined} />
+                                    <PlusOutlined />
                                     新增用户
                                 </Button>
                             }
@@ -167,7 +167,7 @@ export default function ManagePage({ sessionData }: { sessionData: SessionDataIt
                                 name="username"
                                 fieldProps={{
                                     size: 'large',
-                                    prefix: <UserOutlined className={'prefixIcon'} rev={undefined} />,
+                                    prefix: <UserOutlined className={'prefixIcon'} />,
                                 }}
                                 placeholder={'用户名'}
                                 rules={[
@@ -185,7 +185,7 @@ export default function ManagePage({ sessionData }: { sessionData: SessionDataIt
                                 name="password"
                                 fieldProps={{
                                     size: 'large',
-                                    prefix: <LockOutlined className={'prefixIcon'} rev={undefined} />,
+                                    prefix: <LockOutlined className={'prefixIcon'} />,
                                 }}
                                 placeholder={'登录密码'}
                                 rules={[
@@ -203,7 +203,7 @@ export default function ManagePage({ sessionData }: { sessionData: SessionDataIt
                                 name="useremail"
                                 fieldProps={{
                                     size: 'large',
-                                    prefix: <MailOutlined className={'prefixIcon'} rev={undefined} />,
+                                    prefix: <MailOutlined className={'prefixIcon'} />,
                                 }}
                                 placeholder={'邮箱'}
                                 rules={[
@@ -283,7 +283,7 @@ export default function ManagePage({ sessionData }: { sessionData: SessionDataIt
                                     <Tag color={row.enabled === 1 ? "green" : "red"} key="enabled_tag">
                                         {row.enabled === 1 ? "正常" : "已禁用"}
                                     </Tag>
-                                    <Tag icon={<ProjectOutlined rev={undefined} />} key="projectcount_tag">
+                                    <Tag icon={<ProjectOutlined />} key="projectcount_tag">
                                         {row.projectcount}
                                     </Tag>
                                 </Space>

@@ -309,7 +309,7 @@ export default function ProjectPage() {
                             key="addProjectForm"
                             trigger={
                                 <Button type="primary" onClick={() => { setTelegramNoticeEnabled(false); }}>
-                                    <PlusOutlined rev={undefined} />
+                                    <PlusOutlined />
                                     新建项目
                                 </Button>
                             }

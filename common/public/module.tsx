@@ -244,7 +244,7 @@ export default function ModulePage({ sessionData }: { sessionData: SessionDataIt
                             key="addModuleForm"
                             trigger={
                                 <Button type="primary" onClick={() => { setAddModuleExtraParametersEnabled(false); }}>
-                                    <PlusOutlined rev={undefined} />
+                                    <PlusOutlined />
                                     新建模块
                                 </Button>
                             }

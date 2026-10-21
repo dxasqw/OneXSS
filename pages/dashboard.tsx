@@ -45,11 +45,11 @@ type DataItem = {
 const loopMenuItem = (menus: any[]): MenuDataItem[] => {
 
   const IconMap = {
-    "dashboard": <DashboardOutlined rev={undefined} />,
-    "project": <ProjectOutlined rev={undefined} />,
-    "module": <AppstoreAddOutlined rev={undefined} />,
-    "accesslog": <IeOutlined rev={undefined} />,
-    "manage": <TeamOutlined rev={undefined} />
+    "dashboard": <DashboardOutlined />,
+    "project": <ProjectOutlined />,
+    "module": <AppstoreAddOutlined />,
+    "accesslog": <IeOutlined />,
+    "manage": <TeamOutlined />
   };
 
   return menus.map(({ icon, routes, ...item }) => ({
@@ -116,7 +116,7 @@ export default function DashBoard({ data }: { data: DataItem }) {
             disabled={row.is_used == 1} // 已使用的,禁用按钮
           >
             <Button type="primary" size={'small'} disabled={row.is_used == 1}>
-              <DeleteOutlined rev={undefined} />
+              <DeleteOutlined />
               删除
             </Button>
           </Popconfirm>
@@ -254,7 +254,7 @@ export default function DashBoard({ data }: { data: DataItem }) {
         title="One XSS 管理平台"
         logo="/logo.png"
         avatarProps={{
-          // icon: <UserOutlined rev={undefined} />,
+          // icon: <UserOutlined />,
           icon: <ModalForm
             title="用户信息修改"
             key="modify_user_modalform"
@@ -266,7 +266,7 @@ export default function DashBoard({ data }: { data: DataItem }) {
             onFinish={handleModifyUserSubmit}
             trigger={
               <Tooltip title="用户设置" key="SettingToolTip">
-                <UserOutlined key="SettingOutlined" rev={undefined} />
+                <UserOutlined key="SettingOutlined" />
               </Tooltip>
             }
           >
@@ -274,7 +274,7 @@ export default function DashBoard({ data }: { data: DataItem }) {
               name="username"
               fieldProps={{
                 size: 'large',
-                prefix: <UserOutlined className={'prefixIcon'} rev={undefined} />,
+                prefix: <UserOutlined className={'prefixIcon'} />,
               }}
               placeholder={'用户名'}
               initialValue={data.sessionData.username}
@@ -284,7 +284,7 @@ export default function DashBoard({ data }: { data: DataItem }) {
               name="useremail"
               fieldProps={{
                 size: 'large',
-                prefix: <MailOutlined className={'prefixIcon'} rev={undefined} />,
+                prefix: <MailOutlined className={'prefixIcon'} />,
               }}
               placeholder={'邮箱'}
               initialValue={data.sessionData.useremail}
@@ -293,7 +293,7 @@ export default function DashBoard({ data }: { data: DataItem }) {
               name="password"
               fieldProps={{
                 size: 'large',
-                prefix: <LockOutlined className={'prefixIcon'} rev={undefined} />,
+                prefix: <LockOutlined className={'prefixIcon'} />,
               }}
               placeholder={'旧密码'}
               rules={[
@@ -307,7 +307,7 @@ export default function DashBoard({ data }: { data: DataItem }) {
               name="new_password"
               fieldProps={{
                 size: 'large',
-                prefix: <LockOutlined className={'prefixIcon'} rev={undefined} />,
+                prefix: <LockOutlined className={'prefixIcon'} />,
               }}
               placeholder={'新密码,不修改请置空'}
               rules={[
@@ -321,7 +321,7 @@ export default function DashBoard({ data }: { data: DataItem }) {
               name="new_password_confirm"
               fieldProps={{
                 size: 'large',
-                prefix: <LockOutlined className={'prefixIcon'} rev={undefined} />,
+                prefix: <LockOutlined className={'prefixIcon'} />,
               }}
               placeholder={'确认新密码,不修改请置空'}
               rules={[
@@ -348,7 +348,7 @@ export default function DashBoard({ data }: { data: DataItem }) {
             // onFinish={handleInviteUserSubmit}
             trigger={
               <Tooltip title="邀请" key="InviteToolTip">
-                <ShareAltOutlined key="InviteOutlined" rev={undefined} />
+                <ShareAltOutlined key="InviteOutlined" />
               </Tooltip>
             }
           >
@@ -364,7 +364,7 @@ export default function DashBoard({ data }: { data: DataItem }) {
                 onCancel={() => { setAddInviteLoadding(false); }}
               >
                 <Button type="primary">
-                  <PlusOutlined rev={undefined} />
+                  <PlusOutlined />
                   创建邀请码
                 </Button>
               </Popconfirm>
@@ -417,7 +417,7 @@ export default function DashBoard({ data }: { data: DataItem }) {
               dateFormatter="string" />
           </ModalForm>,
           <Tooltip title="注销" key="LogoutToolTip">
-            <LogoutOutlined key="LogoutOutlined" onClick={Logout} rev={undefined} />
+            <LogoutOutlined key="LogoutOutlined" onClick={Logout} />
           </Tooltip>
         ]}
         menuItemRender={(item, dom) => (

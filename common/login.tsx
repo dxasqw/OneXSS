@@ -83,7 +83,7 @@ export default function PlatformLoginForm() {
             name="username"
             fieldProps={{
               size: 'large',
-              prefix: <UserOutlined className={'prefixIcon'} rev={undefined} />,
+              prefix: <UserOutlined className={'prefixIcon'} />,
             }}
             placeholder={'用户名'}
             rules={[
@@ -101,7 +101,7 @@ export default function PlatformLoginForm() {
             name="password"
             fieldProps={{
               size: 'large',
-              prefix: <LockOutlined className={'prefixIcon'} rev={undefined} />,
+              prefix: <LockOutlined className={'prefixIcon'} />,
             }}
             placeholder={'密码'}
             rules={[
@@ -123,7 +123,7 @@ export default function PlatformLoginForm() {
             name="username"
             fieldProps={{
               size: 'large',
-              prefix: <UserOutlined className={'prefixIcon'} rev={undefined} />,
+              prefix: <UserOutlined className={'prefixIcon'} />,
             }}
             placeholder={'注册用户名'}
             rules={[
@@ -141,7 +141,7 @@ export default function PlatformLoginForm() {
             name="password"
             fieldProps={{
               size: 'large',
-              prefix: <LockOutlined className={'prefixIcon'} rev={undefined} />,
+              prefix: <LockOutlined className={'prefixIcon'} />,
             }}
             placeholder={'登录密码'}
             rules={[
@@ -159,7 +159,7 @@ export default function PlatformLoginForm() {
             name="useremail"
             fieldProps={{
               size: 'large',
-              prefix: <MailOutlined className={'prefixIcon'} rev={undefined} />,
+              prefix: <MailOutlined className={'prefixIcon'} />,
             }}
             placeholder={'邮箱'}
             rules={[
@@ -177,7 +177,7 @@ export default function PlatformLoginForm() {
             name="invitecode"
             fieldProps={{
               size: 'large',
-              prefix: <ShareAltOutlined className={'prefixIcon'} rev={undefined} />,
+              prefix: <ShareAltOutlined className={'prefixIcon'} />,
             }}
             placeholder={'注册邀请码'}
             rules={[
